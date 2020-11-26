@@ -1,0 +1,60 @@
+@startuml
+
+' definitions
+' -----------
+!include config.cfg
+
+' package ""
+abstract Pizza
+abstract Pizzeria
+class PizzaFromageStyleBrest
+class PizzaFromageStyleStrasbourg
+class PizzaSavoyardeStyleBrest
+class PizzaSavoyardeStyleStrasbourg
+class PizzaCustomStyleBrest
+class PizzaCustomStyleStrasbourg
+class PizzaTestDrive
+' end package
+
+Pizza  <|-- "PizzaFromageStyleBrest" 
+Pizza  <|-- "PizzaFromageStyleStrasbourg"
+Pizza  <|-- "PizzaSavoyardeStyleBrest" 
+Pizza  <|-- "PizzaSavoyardeStyleStrasbourg"
+Pizza  <|-- "PizzaCustomStyleBrest" 
+Pizza  <|-- "PizzaCustomStyleStrasbourg"   
+' content
+' -------
+
+' Pizza:
+Pizza : #String name
+Pizza : #String pate 
+Pizza : #String sauce
+Pizza : #ArrayList garnitures
+Pizza : +void preparer()
+Pizza : +void cuire()
+Pizza : +void couper()
+Pizza : +void emballer()
+Pizza : +void getNom()
+
+
+' PizzaFromageStyleStrasbourg:
+PizzaFromageStyleStrasbourg : +PizzaFromageStyleStrasbourg()
+
+' PizzaFromageStyleBrest:
+PizzaFromageStyleBrest : +PizzaFromageStyleBrest()
+
+' PizzaSavoyardeStyleStrasbourg:
+PizzaSavoyardeStyleStrasbourg : +PizzaSavoyardeStyleStrasbourg()
+
+' PizzaSavoyardeStyleBrest:
+PizzaSavoyardeStyleBrest : +PizzaSavoyardeStyleBrest()
+
+' PizzaCustomStyleStrasbourg:
+PizzaCustomStyleStrasbourg : +PizzaCustomStyleStrasbourg()
+
+' PizzaCustomStyleBrest:
+PizzaCustomStyleBrest : +PizzaCustomStyleBrest()
+
+
+
+@enduml
