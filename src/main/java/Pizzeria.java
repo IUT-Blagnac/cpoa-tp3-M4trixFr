@@ -1,5 +1,6 @@
 public abstract class Pizzeria {
-	PizzaFactory pizzaFactory;
+    protected PizzaFactory PizzaFactory;
+    PizzaFactory pizzaFactory;
 	protected Pizza commanderPizza(String type) {
 		
 		Pizza instance = pizzaFactory.creerPizza(type);

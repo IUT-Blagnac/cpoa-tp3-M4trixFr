@@ -7,7 +7,7 @@ public abstract class Pizza {
 	protected ArrayList<String> garnitures;
 
 	/**
-	 * 
+	 *
 	 */
 	protected Pizza() {
 		this.nom = "";
@@ -19,11 +19,11 @@ public abstract class Pizza {
 
 
 	protected void preparer() {
-		System.out.println("Préparation de " + this.nom );
+		System.out.println("Préparation de " + this.nom);
 		System.out.println("Étalage de la pâte...");
 		System.out.println("Ajout de la sauce... ");
 		System.out.println("Ajout des garnitures:");
-		for (int i=0; i<garnitures.size(); i++) {
+		for (int i = 0; i < garnitures.size(); i++) {
 			System.out.println(" " + this.garnitures.get(i));
 		}
 
@@ -34,15 +34,17 @@ public abstract class Pizza {
 	}
 
 	protected void couper() {
-		System.out.println("Découpage en parts" );
+		System.out.println("Découpage en parts");
 	}
 
 	protected void emballer() {
 		System.out.println("Emballage dans une boîte officielle");
 
 	}
+
 	protected String getNom() {
 
 		return this.nom;
 
 	}
+}
