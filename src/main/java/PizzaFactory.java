@@ -1,6 +1,6 @@
 
 
-public abstract class PizzaFabrique {
+public abstract class PizzaFactory {
 	public static Pizza creerPizza(String type) {
 		Pizza pizza = null;
 		if (type.equals("Fromage")) {

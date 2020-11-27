@@ -1,15 +1,15 @@
 
-public class FabriquePizzaStrasbourg extends PizzaFabrique{
+public class PizzaStrasbourgFactory extends PizzaFactory {
 
-	private static FabriquePizzaStrasbourg uniqueInstance;
+	private static PizzaStrasbourgFactory uniqueInstance;
 	
-	private FabriquePizzaStrasbourg() {
+	private PizzaStrasbourgFactory() {
 		
 	}
 	
-	public static FabriquePizzaStrasbourg getInstance() {
+	public static PizzaStrasbourgFactory getInstance() {
 		if(uniqueInstance == null) {
-			uniqueInstance = new FabriquePizzaStrasbourg();
+			uniqueInstance = new PizzaStrasbourgFactory();
 		}
 		return uniqueInstance;
 	}
