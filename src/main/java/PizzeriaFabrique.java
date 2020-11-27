@@ -10,6 +10,7 @@ public class PizzeriaFabrique {
 		if(uniqueInstance == null) {
 			uniqueInstance = new PizzeriaFabrique();
 		}
+
 		return uniqueInstance;
 	}
 	

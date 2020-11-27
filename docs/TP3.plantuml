@@ -5,9 +5,9 @@
 !include config.cfg
 
 ' package ""
-abstract Pizza
-abstract Pizzeria
-abstract PizzaFactory
+abstract class Pizza
+abstract class Pizzeria
+abstract class PizzaFactory
 class PizzeriaBrest
 class PizzeriaStrasbourg
 class PizzeriaFactory
