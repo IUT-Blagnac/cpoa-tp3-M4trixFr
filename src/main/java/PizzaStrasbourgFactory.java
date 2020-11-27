@@ -14,7 +14,7 @@ public class PizzaStrasbourgFactory extends PizzaFactory {
 		return uniqueInstance;
 	}
 	
-	public static Pizza creerPizza(String name) {
+	public Pizza creerPizza(String name) {
 		Pizza pizza = null;
 		if(name.equals("Savoyarde")) {
 			pizza = new PizzaSavoyardeStyleStrasbourg();
